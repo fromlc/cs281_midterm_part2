@@ -14,7 +14,7 @@
 // 
 //      5) Display the status of all devices after each command executes.
 // 
-//      6) Don't forget to use proper coding style.
+//      6) Don't forget to use proper coding style and best practices.
 // 
 //------------------------------------------------------------------------------
 #include "SmartHome.h"
