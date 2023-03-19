@@ -18,8 +18,8 @@ using std::cout;
 //------------------------------------------------------------------------------
 // Lamp
 //------------------------------------------------------------------------------
-constexpr int LB_DEFAULT = 60;
-constexpr int LB_MAX = 100;
+constexpr int LAMP_DEFAULT = 60;
+constexpr int LAMP_MAX = 100;
 
 class Lamp : public IoTDevice {
 private:
@@ -27,11 +27,11 @@ private:
 
 public:
     // constructor
-    Lamp() : IoTDevice() { watts = LB_DEFAULT; }
+    Lamp() : IoTDevice() { watts = LAMP_DEFAULT; }
 
     // ambient light level
     bool setWatts(int _watts) {
-        watts = min(_watts, LB_MAX);
+        watts = min(abs(_watts), LAMP_MAX);
     }
 
     // device-specific status display
